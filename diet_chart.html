@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="main">
+        <div class="container">
+         <h2>Get your Diet Chart here</h2>
+            <p id="para"> Kindly confirm the below things : </p>
+            <form id="register">
+            <div class="gender-option">
+                <div class="gender">
+                    <input type="radio" id="check-male_u" name="gender" >
+                    <label for="check-male_u">male and underweight</label>
+                </div>
+                <div class="gender">
+                    <input type="radio" id="check-female_u" name="gender"/>
+                    <label for="check-female">Female and underweight</label>
+                </div>
+                <div class="gender">
+                    <input type="radio" id="check-male_o" name="gender"/>
+                    <label for="check-male">male and overrweight</label>
+                </div>
+                <div class="gender">
+                    <input type="radio" id="check-female_o" name="gender" />
+                    <label for="check-female">Female and overweight</label>
+                </div>
+                <div class="gender">
+                    <input type="radio" id="check-healthy" name="gender" />
+                    <label for="check-female">Healthy Person</label>
+                </div>
+                <div class="bmi">
+                     BMI Value : <input type="number">
+                </div>
+                <div class="button">
+                    <a id="submit" onclick="get_chart()">Submit</a>
+                </div>
+              </div>
+              </form>
+            </div>
+       
+       </div>
+       <style>
+        * 
+        {
+            margin:0;
+            padding:0;
+        }
+        body 
+        {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWo8NlrXKWOCRQPmDvOfUN0g6A-F8sktpjBw&usqp=CAU");
+           background-size: 280%;
+           background-position: -400px 0px;
+        
+        }
+      div.main 
+      {
+        width:600px;
+        margin:100px auto 0px auto;
+      }
+      h2, #para
+      {
+        text-align:center;
+        padding:20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      div.container 
+      {
+        background-color: rgba(0,0,0,0.5);
+        width:100%;
+        font-size: 18px;
+        border-radius: 10px;
+        border:1px solid rgba(255,255,255,0.3);
+        box-shadow:2px,2px,15px rgba(0,0,0,0,3);
+        color:#fff;
+        line-height: 34px;
+        padding: 45px 45px;
+        /* padding-left: 23px; */
+      }
+      form #register 
+      {
+        margin:40px;
+      }
+
+      label 
+      {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 18px;
+        /* font-style:italic; */
+      }
+      #submit {
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 140px;
+  background-color: #0d3a5d;
+  color: #fff;
+  margin: auto;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  padding: 2px 30px;
+}
+
+#submit:hover{
+  background-color: #0a8ef2;
+}
+</style>
+</body>
+</html>
+<script>
+    function get_chart()
+    {
+    var male_u = document.getElementById('check-male_u');
+    var male_o = document.getElementById('check-male_o');
+    var female_u = document.getElementById('check-female_u');
+    var female_o = document.getElementById('check-female_o');
+    var healthy = document.getElementById('check-healthy');
+    if(male_u.checked==true)
+    {
+        
+        window.location.assign("https://i.pinimg.com/originals/b2/d6/f8/b2d6f832d1b662a1a635ddbd533b9f35.jpg");
+    }
+    if(female_u.checked==true)
+    {
+        // alert("female_underweight");
+        windows.location.assign("https://i.pinimg.com/originals/b2/d6/f8/b2d6f832d1b662a1a635ddbd533b9f35.jpg");
+       
+    }
+    if(male_o.checked==true)
+    {
+        // alert("male_overweight");
+        window.location.assign("https://www.zamzar.com/download.php?uid=2a107c9ef3f41f5f12cf4fbc82f33b8-596ed2da7dd25d6c&tcs=Z91&fileID=p1hile6csv1mk1i54klv13st1s394.jpg.zip");
+    }
+    if(female_o.checked==true)
+    {
+        // alert("female_overweight");
+        windows.location.assign("https://i.pinimg.com/originals/b2/d6/f8/b2d6f832d1b662a1a635ddbd533b9f35.jpg");
+    }
+    if(healthy.checked==true)
+    {
+        // alert("healthy");
+        window.location.assign("https://www.zamzar.com/download.php?uid=a0803061406ed128890a49b13f5c9d-ab39e95b6150a743&tcs=Z91&fileID=p1hildn0ifq0oqbguedupm1lff4.jpg.zip");
+    }
+}
+</script>
